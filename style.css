@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.ttf');
+}
+
+html {
+    background: url(images/image.jpeg) no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Lato;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17rem;
+    height: 22rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.2);
+}
+
+.container * {
+    margin-top: 0.5rem;
+}
+
+.user-community i {
+    margin: 0rem 0.4rem;
+    font-size: 2em;
+    position: relative;
+    transition: transform 0.6s;
+}
+
+.fa-linkedin-square {
+    color: rgb(20, 81, 212);
+}
+
+.fa-telegram {
+    color: rgb(21, 140, 196);
+}
+
+.user-community i:hover {
+    color: darkgreen;
+    transform: rotateZ(360deg);
+}
+
+#user-name {
+    color: red;
+}
+
+#user-image {
+    background: url(images/me.jpg) no-repeat center;
+    width: 7em;
+    height: 7em;
+    border-color: teal;
+    border-style: solid;
+    border-width: 5px;
+    background-size: cover;
+    border-radius: 180px;
+}
+
+#user-description {
+    text-align: justify;
+    padding: 0rem 1.5rem;
+    font-size: 0.9em;
+}
