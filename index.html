@@ -1,40 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Card Profile</title>
-</head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="css/vazir.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>ActiveDev</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbar_top" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <header id="home">
+            <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light pt-3">
+                <div class="container">
+                    <a class="navbar-brand" href="#">ActiveDev</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-me">درباره من</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#resume">رزومه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">پروژه ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">تماس</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-<body>
-    <div class="container">
-        <div id="user-image"></div>
-        <h3 id="user-name">Mohammad Mahdi Seraj</h3>
-        <h4>BackEnd Developer</h4>
-        <span id="user-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore modi
-            sed? Ea laboriosam
-            labore dolorum voluptates facilis ipsam id dolores ratione maxime quae! Vero et maiores consequuntur
-            blanditiis sed.</span>
-        <div class="user-community">
-            <a href="https://github.com/ActiveDev1" target="_blank">
-                <i class="fa fa-github" title="Github"></i>
-            </a>
+        <section id="home-section" class="min-vh-100 d-flex align-items-center justify-content-centers">
+            <div class="container h-100">
+                <div class="row align-items-center text-center h-100">
+                    <div class="col">
+                        <h6 class="fs-6 text-primary font-bold">سلام، من</h6>
+                        <h1 class="d-inline-block text-wrap fs-1 font-bold">محمد مهدی سراج</h1>
+                        <h2 class="fs-4 font-bold">توسعه دهنده سرور</h2>
+                        <h6 class="fs-6 text-primary font-bold">هستم</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <a href="https://www.linkedin.com/in/activedev/" target="_blank">
-                <i class="fa fa-linkedin-square" title="LinkedIn">
-                </i>
-            </a>
-            <a href="https://t.me/ActiveDev" target="_blank">
-                <i class="fa fa-telegram" title="Telegram">
-                </i>
-            </a>
-        </div>
-    </div>
-</body>
+        <section id="about-me">
+            <div class="container">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid" src="./images/img.jpg" alt="My picture" />
+                    </div>
+                    <div class="col-md-6 ps-md-3">
+                        <h2 class="fs-1 font-bold">درباره من</h2>
+                        <p class="my-4 text-muted">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        </p>
+                        <ul class="d-flex flex-column list-unstyled about-info">
+                            <li class="d-flex py-2"><span>نام:</span><span>محمد مهدی سراج</span></li>
+                            <li class="d-flex py-2"><span>متولد:</span><span>1378</span></li>
+                            <li class="d-flex py-2"><span>ساکن:</span><span>ایران ، مشهد</span></li>
+                            <li class="d-flex py-2"><span>ایمیل:</span><span>activedev78@gmail.com</span></li>
+                            <li class="d-flex py-2"><span>همراه:</span><span>09156178233</span></li>
+                        </ul>
+                        <div class="row text-center text-md-start mb-3">
+                            <div class="col">
+                                <button class="btn btn-primary rounded-3 r">دریافت رزومه</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="resume" class="mt-5 pt-3">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-md-3">
+                        <nav id="navi" class="fs-5 sticky-top top-50">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#page-1" class="nav-link font-bold text-black">تحصیلات</a>
+                                </li>
+                                <li>
+                                    <a href="#page-2" class="nav-link font-bold text-black">تجربیات</a>
+                                </li>
+                                <li>
+                                    <a href="#page-3" class="nav-link font-bold text-black">مهارت ها</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 ps-sm-1">
+                        <div id="resume-section">
+                            <div id="page-1" class="pb-5">
+                                <h2 class="mb-5 text-primary">تحصیلات</h2>
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <i class="icon bi bi-book"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p class="fs-5 text-primary font-bold mb-0">1397-1401</p>
+                                        <p class="fs-3 font-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+                                        <p class="fs-4 font-bold">لورم ایپسوم</p>
+                                        <p class="fs-6 text-muted">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                            استفاده قرار گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <i class="icon bi bi-book"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p class="fs-5 text-primary font-bold mb-0">1393-1497</p>
+                                        <p class="fs-3 font-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+                                        <p class="fs-4 font-bold">لورم ایپسوم</p>
+                                        <p class="fs-6 text-muted">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                            استفاده قرار گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="page-2" class="pb-5">
+                                <h2 class="mb-5 text-primary">تجربیات</h2>
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <i class="icon bi bi-book"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p class="fs-5 text-primary font-bold mb-0">1397-1401</p>
+                                        <p class="fs-3 font-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+                                        <p class="fs-4 font-bold">لورم ایپسوم</p>
+                                        <p class="fs-6 text-muted">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                            استفاده قرار گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <i class="icon bi bi-book"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p class="fs-5 text-primary font-bold mb-0">1397-1401</p>
+                                        <p class="fs-3 font-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+                                        <p class="fs-4 font-bold">لورم ایپسوم</p>
+                                        <p class="fs-6 text-muted">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                            استفاده قرار گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="page-3" class="pb-5">
+                                <h2 class="mb-5 text-primary">مهارت ها</h2>
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <i class="icon bi bi-book"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p class="fs-5 text-primary font-bold mb-0">1397-1401</p>
+                                        <p class="fs-3 font-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+                                        <p class="fs-4 font-bold">لورم ایپسوم</p>
+                                        <p class="fs-6 text-muted">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                            استفاده قرار گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <i class="icon bi bi-book"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <p class="fs-5 text-primary font-bold mb-0">1397-1401</p>
+                                        <p class="fs-3 font-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+                                        <p class="fs-4 font-bold">لورم ایپسوم</p>
+                                        <p class="fs-6 text-muted">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                                            لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                                            شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را
+                                            برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                            استفاده قرار گیرد.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
